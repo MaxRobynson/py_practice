@@ -1,0 +1,50 @@
+import tkinter
+
+windows = tkinter.Tk()
+windows.title('Calculatrice')
+
+frame = tkinter.Frame(windows)
+frame.pack()
+
+#entrer des valeurs
+valeur_frame= tkinter.LabelFrame(frame)
+valeur_frame.grid(row=0, column=0, padx=10, pady=10)
+valeur_entry = tkinter.Entry(valeur_frame, width=50, )
+valeur_entry.grid(row=0, column=0)
+
+number_frame = tkinter.LabelFrame(frame)
+number_frame.grid(row=1, column=0, sticky='news', padx=10, pady=10)
+
+nine_val = tkinter.Button(number_frame, text='9')
+nine_val.grid(row=0, column=0)
+eight_val = tkinter.Button(number_frame, text='8')
+eight_val.grid(row=0, column=1)
+seven_val = tkinter.Button(number_frame, text='7')
+seven_val.grid(row=0, column=2)
+six_val = tkinter.Button(number_frame, text='6')
+six_val.grid(row=1, column=0)
+five_val = tkinter.Button(number_frame, text='5')
+five_val.grid(row=1, column=1)
+four_val = tkinter.Button(number_frame, text='4')
+four_val.grid(row=1, column=2)
+three_val = tkinter.Button(number_frame, text='3')
+three_val.grid(row=2, column=0)
+two_val = tkinter.Button(number_frame, text='2')
+two_val.grid(row=2, column=1)
+one_val = tkinter.Button(number_frame, text='1')
+one_val.grid(row=2, column=2)
+zero_val = tkinter.Button(number_frame, text='0')
+zero_val.grid(row=3, column=1)
+plus_val = tkinter.Button(number_frame, text='+')
+plus_val.grid(row=0, column=3)
+minus_val = tkinter.Button(number_frame, text='-')
+minus_val.grid(row=1, column=3)
+div_val = tkinter.Button(number_frame, text='/')
+div_val.grid(row=2, column=3)
+mul_val = tkinter.Button(number_frame, text='x')
+mul_val.grid(row=3, column=3)
+equal_val = tkinter.Button(number_frame, text='=')
+equal_val.grid(row=3, column=2)
+
+
+windows.mainloop()
